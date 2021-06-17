@@ -2,7 +2,7 @@
 #include <string.h>
 
 int main () {
-   char vaca[15];
+   char vaca[52];
 
    strcpy(vaca, "\"Programming is like building a multilingual puzzle");
 
