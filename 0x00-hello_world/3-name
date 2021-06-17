@@ -1,2 +1,2 @@
 #!/bin/bash
-algo debe suceder aqui
+gcc –Wall "$CFILE" –o cisfun
