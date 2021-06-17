@@ -1,0 +1,3 @@
+# Learn to use C
+## do a C basic program
+The idea is that using this files you can see the process to create a C program and learn how to do it again and again and again...
