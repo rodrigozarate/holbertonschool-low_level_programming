@@ -16,7 +16,7 @@ int main(void)
 	int rza;
 
 	for (rza = 0; rza < 10; rza++)
-		putchar((rza %10) + '0');
+		putchar((rza % 10) + '0');
 
 	putchar('\n');
 
