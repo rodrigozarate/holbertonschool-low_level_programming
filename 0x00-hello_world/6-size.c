@@ -1,9 +1,9 @@
 /**
- * main
+ * main - print size of types
  * ----
  * show the size in bytes of char, int, long, double, and float types
  * no parameters
- * returns 0
+ * returns: 0
  * 17/06/2021
  * Rodrigo Zárate Algecira
  */
@@ -12,9 +12,9 @@
 #include <stdlib.h>
 #include <float.h>
 
-int main(void) {
-
-	char charType;	
+int main(void)
+{
+	char charType;
 	int intType;
 	long longType;
 	double doubleType;
