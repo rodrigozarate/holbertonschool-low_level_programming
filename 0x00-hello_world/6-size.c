@@ -1,6 +1,6 @@
-/*
- * Function: main
- * --------------
+/**
+ * main
+ * ----
  * show the size in bytes of char, int, long, double, and float types
  * no parameters
  * returns 0
@@ -13,6 +13,7 @@
 #include <float.h>
 
 int main(void) {
+
 	char charType;	
 	int intType;
 	long longType;
@@ -25,5 +26,5 @@ int main(void) {
 	printf("Size of a long long int: %zu byte\(s\)\n", sizeof(doubleType));
 	printf("Size of a float: %zu byte\(s\)\n", sizeof(floatType));
 
-	return 0;
+	return (0);
 }
