@@ -9,7 +9,8 @@
 #include <time.h>
 
 /**
-* main - Print random number and states +, -, or 0 
+* main - Print random number and states +, -, or 0
+* Return: Zero
 */
 
 int main(void)
