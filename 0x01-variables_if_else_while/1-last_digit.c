@@ -4,6 +4,7 @@
 * Date: Friday 18 june 2021
 */
 
+#include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
 
