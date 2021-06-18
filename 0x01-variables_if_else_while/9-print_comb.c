@@ -20,7 +20,7 @@ int main(void)
 		putchar((rza % 10) + '0');
 		if (rza == 9)
 		continue;
-		
+
 		putchar(',');
 		putchar(' ');
 	}
