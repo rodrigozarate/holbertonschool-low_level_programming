@@ -9,7 +9,7 @@
 #include <time.h>
 
 /**
-* main - Prints the last digit of a random number 
+* main - Prints the last digit of a random number
 * Return: Cero Always
 */
 
