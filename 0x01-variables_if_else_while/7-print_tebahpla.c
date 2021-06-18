@@ -13,12 +13,12 @@
 
 int main(void)
 {
-	char ab;
+char ab;
 
-        for (ab = 'z'; ab >= 'a'; ab--)
-                putchar(ab);
+	for (ab = 'z'; ab >= 'a'; ab--)
+	putchar(ab);
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
+	return (0);
 }
