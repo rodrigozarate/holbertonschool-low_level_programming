@@ -15,10 +15,10 @@ int main(void)
 {
 	int rza;
 
-        for (rza = 0; rza < 10; rza++)
-                putchar((rza %10) + '0');
+	for (rza = 0; rza < 10; rza++)
+		putchar((rza %10) + '0');
 
-        putchar('\n');
+	putchar('\n');
 
-        return (0);
+	return (0);
 }
