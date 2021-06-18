@@ -3,7 +3,7 @@
  * ----
  * show the size in bytes of char, int, long, double, and float types
  * no parameters
- * returns: 0
+ * return: 0
  * 17/06/2021
  * Rodrigo Zárate Algecira
  */
