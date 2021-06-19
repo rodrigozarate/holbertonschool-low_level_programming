@@ -2,6 +2,7 @@
 * File: 100-print_comb3.c
 * Auth: Rodrigo Zárate Algecira
 * Date: Friday 18 june 2021
+*/
 
 #include <stdio.h>
 
