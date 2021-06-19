@@ -2,7 +2,6 @@
 * File: 100-print_comb3.c
 * Auth: Rodrigo Zárate Algecira
 * Date: Friday 18 june 2021
-*/
 
 #include <stdio.h>
 
@@ -13,27 +12,25 @@
 
 int main(void)
 {
-	int nm1, nm2;
+	int A = 48;
+	int B = 49;
 
-	for (nm1 = 0; nm1 < 10; nm1++)
+	while (A <= 56)
 	{
-		for (nm2 = 0; nm2 < 10; nm2++)
+		while (B <= 57)
 		{
-			if (nm1 == nm2)
-				continue;
-
-			putchar(nm1 + '0');
-			putchar(nm2 + '0');
-
-			if (nm1 == 9 && nm2 == 9)
-				continue;
-
-			putchar(',');
-			putchar(' ');
+			putchar(A);
+			putchar(B);
+				if (A != 56)
+				{
+					putchar(44);
+					putchar(32);
+				}
+			B++;
 		}
+		A++;
+		B = A + 1;
 	}
-
 	putchar('\n');
-
 	return (0);
 }
