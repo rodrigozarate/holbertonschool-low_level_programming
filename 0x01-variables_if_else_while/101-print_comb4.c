@@ -18,6 +18,7 @@ int main(void)
 	int rza = 48;
 	int zar = 49;
 	int arz = 50;
+
 	while (rza <= 55)
 	{
 		while (zar <= 56)
@@ -28,7 +29,7 @@ int main(void)
 				putchar(zar);
 				putchar(arz);
 					if (rza != 55)
-					{	
+					{
 						putchar(44);
 						putchar(32);
 					}
