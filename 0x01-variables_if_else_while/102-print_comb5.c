@@ -40,12 +40,9 @@ r3 = 48;
 					putchar(r2);
 					putchar(r1);
 					if (r4 == 57 && r3 == 56 && r2 == 57 && r1 == 57)
-					{
 					break;
-					}
-					putchar(',');
-					putchar(' ');
-
+				putchar(',');
+				putchar(' ');
 				}
 				r1++;
 			}
