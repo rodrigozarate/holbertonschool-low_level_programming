@@ -22,8 +22,8 @@ int main(void)
 			if (nm1 == nm2)
 				continue;
 
-			putchar(nm1);
-			putchar(nm2);
+			putchar(nm1 + '0');
+			putchar(nm2 + '0');
 
 			if (nm1 == 9 && nm2 == 9)
 				continue;
