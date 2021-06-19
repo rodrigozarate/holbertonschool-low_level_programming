@@ -16,7 +16,6 @@
 
 int main(void)
 {
-
 int r1, r2, r3, r4, r5, r6;
 r1 = r2 = r3 = r4 = 48;
 
@@ -33,7 +32,6 @@ r1 = r2 = r3 = r4 = 48;
 				{
 				r5 = (r4 * 10) + r3;
 				r6 = (r2 * 10) + r1;
-
 					if (r5 < r6)
 					{
 					putchar(r4);
@@ -41,8 +39,7 @@ r1 = r2 = r3 = r4 = 48;
 					putchar(' ');
 					putchar(r2);
 					putchar(r1);
-
-						if (r4 == 57 && r3 == 56 && r2 == 57 && r1 == 57)
+					if (r4 == 57 && r3 == 56 && r2 == 57 && r1 == 57)
 						break;
 						putchar(',');
 						putchar(' ');
