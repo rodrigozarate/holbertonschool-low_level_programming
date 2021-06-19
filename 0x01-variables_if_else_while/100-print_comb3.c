@@ -20,10 +20,10 @@ int main(void)
 		for (nm2 = 0; nm2 < 10; nm2++)
 		{
 			if (nm1 == nm2)
-				continue; 
+				continue;
 
-			putchar((nm1 % 10) + '0');
-			putchar((nm2 % 10) + '0');
+			putchar(nm1);
+			putchar(nm2);
 
 			if (nm1 == 9 && nm2 == 9)
 				continue;
