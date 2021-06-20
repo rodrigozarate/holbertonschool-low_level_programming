@@ -1,5 +1,5 @@
 /*
-* File: 111-print_data_types
+* File: 111-ask_and_print_data_types
 * Auth: Rodrigo Zárate Algecira
 * Date: Saturday 19 june 2021
 */
@@ -19,23 +19,23 @@
 #include <stdio.h>
 int main()
 {
-    float a;
-    int b;
+    float f;
+    int i;
     char ch;
 
     printf("\nEnter value of float\n");
-    scanf("%f", &a);
+    scanf("%f", &f);
 
     printf("\nEnter value of int\n");
-    scanf("%d", &b);
+    scanf("%d", &i);
 
     printf("\nEnter value of char\n");
     scanf(" %c", &ch);
 
-    printf("\nValue of float : %f", a);
-    printf("\nValue of int : %d", b);
+    printf("\nValue of float : %f", f);
+    printf("\nValue of int : %d", i);
     printf("\nValue of char : %c", ch);
-    printf("\nValue of float(rounded) : %.2f\n", a);
+    printf("\nValue of float(rounded) : %.2f\n", f);
 
     return 0;
 }
