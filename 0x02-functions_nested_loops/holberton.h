@@ -1,4 +1,6 @@
-/*
-* this is the prototype
-* not sure if the file can have comments gues yes...
-*/
+#ifndef HOLBERTON_H
+#define HOLBERTON_H
+
+void _putchar(char c);
+
+#endif
