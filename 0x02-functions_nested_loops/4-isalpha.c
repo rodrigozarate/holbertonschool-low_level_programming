@@ -17,15 +17,15 @@ int _isalpha(int rza)
 
 int result;
 
-        result = 0;
+	result = 0;
 
-        if (rza >= 'A' && rza <= 'z')
+	if (rza >= 'A' && rza <= 'z')
         {
-		if (rza <= 'Z' && >= 'a')
+		if (rza <= 'Z' && rza >= 'a')
 		{
-                result = 1;
+		result = 1;
 		}
-        }
-        return (result);
+	}
+	return (result);
 
 }
