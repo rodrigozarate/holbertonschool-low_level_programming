@@ -11,15 +11,13 @@
 * Return: Zero
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	int rza;
-	char abc[] = "abcdefghijklmnopqrstuvwxyz";
+	char abc;
 
-	for (rza = 0; rza <= 27; rza++)
+	for (abc = 'a'; abc <= 'z'; abc++)
 	{
-		_putchar(abc[rza]);
+		_putchar(abc);
 	}
 		_putchar('\n');
-	return (0);
 }
