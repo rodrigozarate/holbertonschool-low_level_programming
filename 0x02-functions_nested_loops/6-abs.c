@@ -1,16 +1,26 @@
 /*
-* File: 0-holberton.c
+* File: 6-abs.c
 * Auth: Rodrigo Zárate Algecira
-* Date: Monday june 21 2021
+* Date: Tuesday june 22 2021
 */
 
-#include <rza.h>
+#include "holberton.h"
 
 /**
-* main - Print holberton
-* Return: Zero
+* int _abs - Computes the absolute value of integer
+* Return: void
+* @rza: integer given
 */
-int main(void)
+
+int _abs(int rza)
 {
-return (0);
+
+	if (rza < 0)
+	{
+        rza = (-1) * rza;
+	}
+
+	/* Print the absolute value */
+	printf("%d ", rza);
+
 }
