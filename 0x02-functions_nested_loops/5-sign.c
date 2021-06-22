@@ -7,7 +7,7 @@
 #include "holberton.h"
 
 /**
-* int_sign - Print +, 0, or -, depending on number given
+* print_sign - Print +, 0, or -, depending on number given
 * Return: one, zero, or minus one depending on given number
 * @rza: the given number
 */
