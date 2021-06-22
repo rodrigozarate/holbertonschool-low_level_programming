@@ -1,16 +1,31 @@
 /*
-* File: 0-holberton.c
+* File: 4-isalpha.c
 * Auth: Rodrigo Zárate Algecira
-* Date: Monday june 21 2021
+* Date: Tuesday june 22 2021
 */
 
-#include <rza.h>
+#include "holberton.h"
 
 /**
-* main - Print holberton
-* Return: Zero
+* _isalpha - Return 0 if false non zero if is letter
+* Return: zero or one
+* @rza: character to evaluate
 */
-int main(void)
+
+int _isalpha(int rza)
 {
-return (0);
+
+int result;
+
+        result = 0;
+
+        if (rza >= 'A' && rza <= 'z')
+        {
+		if (rza <= 'Z' && >= 'a')
+		{
+                result = 1;
+		}
+        }
+        return (result);
+
 }
