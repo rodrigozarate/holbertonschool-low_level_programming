@@ -1,16 +1,25 @@
 /*
-* File: 0-holberton.c
+* File: 1-alphabet.c
 * Auth: Rodrigo Zárate Algecira
-* Date: Monday june 21 2021
+* Date: Tuesday june 22 2021
 */
 
-#include <rza.h>
+#include "holberton.h"
 
 /**
-* main - Print holberton
+* main - Prints alphabet
 * Return: Zero
 */
+
 int main(void)
 {
-return (0);
+	int rza;
+	char abc[] = "abcdefghijklmnopqrstuvwxyz";
+
+	for (rza = 0; rza <= 27; rza++)
+	{
+		_putchar(abc[rza]);
+	}
+		_putchar('\n');
+	return (0);
 }
