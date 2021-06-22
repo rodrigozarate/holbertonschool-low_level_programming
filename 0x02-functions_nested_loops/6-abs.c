@@ -8,7 +8,7 @@
 
 /**
 * int _abs - Computes the absolute value of integer
-* Return: void
+* Return: the value of integer taken from rza
 * @rza: integer given
 */
 
@@ -20,7 +20,6 @@ int _abs(int rza)
         rza = (-1) * rza;
 	}
 
-	/* Print the absolute value */
-	printf("%d ", rza);
+	return(rza);
 
 }
