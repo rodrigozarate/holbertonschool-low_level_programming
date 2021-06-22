@@ -9,7 +9,7 @@
 /**
 * _islower - Return 0 if false non zero if true
 * Return: Zero
-* Parameter: rza
+* @rza: character to evaluate
 */
 
 int _islower(int rza)
