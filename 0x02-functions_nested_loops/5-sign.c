@@ -1,16 +1,35 @@
 /*
-* File: 0-holberton.c
+* File: 5-sign.c
 * Auth: Rodrigo Zárate Algecira
-* Date: Monday june 21 2021
+* Date: Tuesday june 22 2021
 */
 
-#include <rza.h>
+#include "holberton.h"
 
 /**
-* main - Print holberton
-* Return: Zero
+* main - Print +, 0, or -, depending on number given
+* Return: one, zero, or minus one depending on given number
+* @rza - the given number
 */
-int main(void)
+
+int print_sign(int rza)
 {
-return (0);
+int result;
+	if (rza > 0)
+/* check if number is mayor than zero */
+	{
+	_putchar('+');
+	result = 1;
+	}else if (rza == 0)
+/* check if number is equal to zero */
+	{
+	_putchar('0');
+        result = 0;
+	}else if (rza < 0)
+/* check if number is minor than zero */
+	{
+	_putchar('-');
+        result = -1;
+	}
+	return (result);
 }
