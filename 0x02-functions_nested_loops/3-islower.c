@@ -9,6 +9,7 @@
 /**
 * _islower - Return 0 if false non zero if true
 * Return: Zero
+* Parameter: rza
 */
 
 int _islower(int rza)
