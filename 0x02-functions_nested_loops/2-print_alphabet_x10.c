@@ -1,16 +1,28 @@
 /*
-* File: 0-holberton.c
+* File: 2-print_alphabet_x10.c
 * Auth: Rodrigo Zárate Algecira
-* Date: Monday june 21 2021
+* Date: Tuesday june 22 2021
 */
 
-#include <rza.h>
+#include "holberton.h"
 
 /**
-* main - Print holberton
-* Return: Zero
+* main - Prints alphabet 10 times
+* Return: nothing
 */
-int main(void)
+
+void print_alphabet_x10(void)
 {
-return (0);
+        int rza;
+
+	for(rza=0;rza<=10;rza++)
+	{
+		char abc;
+
+        	for (abc = 'a'; abc <= 'z'; abc++)
+        	{
+                	_putchar(abc);
+        	}
+                _putchar('\n');
+	}
 }
