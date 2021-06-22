@@ -7,22 +7,22 @@
 #include "holberton.h"
 
 /**
-* main - Prints alphabet 10 times
+* print_alphabet_x10 - Prints alphabet 10 times
 * Return: nothing
 */
 
 void print_alphabet_x10(void)
 {
-        int rza;
+	int rza;
 
-	for(rza=1;rza<=10;rza++)
+	for (rza = 1; rza <= 10; rza++)
 	{
 		char abc;
 
-        	for (abc = 'a'; abc <= 'z'; abc++)
-        	{
-                	_putchar(abc);
-        	}
-                _putchar('\n');
+		for (abc = 'a'; abc <= 'z'; abc++)
+		{
+			_putchar(abc);
+		}
+		_putchar('\n');
 	}
 }
