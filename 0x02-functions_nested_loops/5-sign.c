@@ -9,7 +9,7 @@
 /**
 * main - Print +, 0, or -, depending on number given
 * Return: one, zero, or minus one depending on given number
-* @rza - the given number
+* @rza: the given number
 */
 
 int print_sign(int rza)
@@ -20,16 +20,18 @@ int result;
 	{
 	_putchar('+');
 	result = 1;
-	}else if (rza == 0)
+	}
+	else if (rza == 0)
 /* check if number is equal to zero */
 	{
 	_putchar('0');
-        result = 0;
-	}else if (rza < 0)
+	result = 0;
+	}
+	else if (rza < 0)
 /* check if number is minor than zero */
 	{
 	_putchar('-');
-        result = -1;
+	result = -1;
 	}
 	return (result);
 }
