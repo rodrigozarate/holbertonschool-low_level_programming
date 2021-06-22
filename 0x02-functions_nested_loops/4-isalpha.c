@@ -20,10 +20,11 @@ int result;
 	result = 0;
 
 	if (rza >= 'A' && rza <= 'z')
-        {
-		if (rza <= 'Z' && rza >= 'a')
+	{
+	result =1;
+		if (rza > 'Z' && rza < 'a')
 		{
-		result = 1;
+		result = 0;
 		}
 	}
 	return (result);
