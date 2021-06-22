@@ -21,7 +21,7 @@ int result;
 
 	if (rza >= 'A' && rza <= 'z')
 	{
-	result =1;
+	result = 1;
 		if (rza > 'Z' && rza < 'a')
 		{
 		result = 0;
