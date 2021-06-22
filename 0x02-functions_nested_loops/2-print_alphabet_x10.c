@@ -15,7 +15,7 @@ void print_alphabet_x10(void)
 {
         int rza;
 
-	for(rza=0;rza<=10;rza++)
+	for(rza=1;rza<=10;rza++)
 	{
 		char abc;
 
