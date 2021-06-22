@@ -1,16 +1,19 @@
 /*
-* File: 0-holberton.c
+* File: 7-print_last_digit.c
 * Auth: Rodrigo Zárate Algecira
-* Date: Monday june 21 2021
+* Date: Tuesday june 22 2021
 */
 
-#include <rza.h>
+#include "holberton.h"
 
 /**
-* main - Print holberton
-* Return: Zero
+* print_last_digit - Print last digit
+* Return: value of last digit
 */
-int main(void)
+int print_last_digit(void)
 {
-return (0);
+/* count char digits */
+/* select just last */
+/* pass it to return */
+return (lastDigit);
 }
