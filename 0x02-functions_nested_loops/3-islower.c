@@ -1,16 +1,29 @@
 /*
-* File: 0-holberton.c
+* File: 3-islower.c
 * Auth: Rodrigo Zárate Algecira
-* Date: Monday june 21 2021
+* Date: Tuesday june 22 2021
 */
 
-#include <rza.h>
+#include "holberton.h"
 
 /**
-* main - Print holberton
+* _islower(int) - Return 0 if false non zero if true
 * Return: Zero
 */
-int main(void)
+
+int _islower(int rza)
 {
-return (0);
+
+int result;
+
+	if (rza >= 'A' && rza <= 'Z')
+	{
+		result = 0;
+	}
+	else if (rza >= 'a' && rza <= 'z')
+	{
+		result = 1;
+	}
+	return (result);
+
 }
