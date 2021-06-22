@@ -7,7 +7,7 @@
 #include "holberton.h"
 
 /**
-* int _abs - Computes the absolute value of integer
+* _abs - Computes the absolute value of integer
 * Return: the value of integer taken from rza
 * @rza: integer given
 */
@@ -17,9 +17,9 @@ int _abs(int rza)
 
 	if (rza < 0)
 	{
-        rza = (-1) * rza;
+	rza = (-1) * rza;
 	}
 
-	return(rza);
+	return (rza);
 
 }
