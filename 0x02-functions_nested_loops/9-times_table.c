@@ -29,8 +29,8 @@ int dg1, dg2;
 		dg1 = z / 10;
 		}
 		dg2 = z % 10;
-		_putchar(dg1);
-		_putchar(dg2);
+		_putchar(dg1 + '0');
+		_putchar(dg2 + '0');
 		_putchar(32);
 		_putchar(',');
 		}
