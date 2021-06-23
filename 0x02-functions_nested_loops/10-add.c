@@ -5,12 +5,16 @@
 */
 
 #include "holberton.h"
+#include <stdio.h>
 
 /**
 * add - Computes add
 * Return: addition of int
+* @x: int value
+* @y: int value
 */
-int add(int, int)
+
+int add(int x, int y)
 {
 	int x, y, z;
 
