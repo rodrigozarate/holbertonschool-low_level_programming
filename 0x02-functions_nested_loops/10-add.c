@@ -16,7 +16,7 @@
 
 int add(int x, int y)
 {
-	int x, y, z;
+	int z;
 
 	scanf("%d%d", &x, &y);
 
