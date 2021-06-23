@@ -20,8 +20,9 @@ int dg1, dg2;
 		for (y = 0; y < 10; y++)
 		{
 		z = x * y;
+		dg1 = z;
 
-			if (dg1 >= 10)
+			while (dg1 >= 10)
 			{
 			dg1 = dg1 / 10;
 			}
@@ -36,9 +37,9 @@ int dg1, dg2;
 			_putchar(dg1 + '0');
 			}
 			_putchar(dg2 + '0');
-			_putchar(',');
 			if (y < 9)
 			{
+			_putchar(',');
 			_putchar(32);
 			}
 		}
