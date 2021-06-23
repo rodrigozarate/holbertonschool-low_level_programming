@@ -25,9 +25,10 @@ int m1;
 				_putchar('0');
 				_putchar(h1 + '0');
 				}
-				else
+			else if (h1 >= 10 && h1 <= 20)
 				{
-				_putchar(h1 + '0');	
+				_putchar('1');
+				_putchar(h1 - '10');	
 				}
 			_putchar(':');
 			if (m1 < 10)
@@ -35,10 +36,31 @@ int m1;
 				_putchar('0');
 				_putchar(m1 + '0');
 				}
-				else
+			else if (m1 >=10 && m1 <20)
 				{
-				_putchar(m1 + '0');
-				}
+				_putchar('1');
+				_putchar(m1 - '10');
+				}_putchar('\n');
+			else if (m1 >=20 && m1 <30)
+                                {
+                                _putchar('2');
+                                _putchar(m1 - '20');
+                                }
+			else if (m1 >=30 && m1 <40)
+                                {
+                                _putchar('3');
+                                _putchar(m1 - '30');
+                                }
+			else if (m1 >=40 && m1 <50)
+                                {
+                                _putchar('4');
+                                _putchar(m1 - '40');
+                                }
+			else if (m1 >=50 && m1 <60)
+                                {
+                                _putchar('5');
+                                _putchar(m1 - '50');
+                                }
 			_putchar('\n');
 		}
 	}
