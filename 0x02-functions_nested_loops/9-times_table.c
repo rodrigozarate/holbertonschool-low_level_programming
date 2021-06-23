@@ -27,7 +27,7 @@ int dg1, dg2;
 			dg1 = dg1 / 10;
 			}
 			dg2 = z % 10;
-			if (x > 1)
+			if (y > 0)
 			{
 				if (z < 10)
 				{
