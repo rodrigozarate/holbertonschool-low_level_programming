@@ -13,75 +13,45 @@
 void jack_bauer(void)
 {
 
-int h1;
-int m1;
-char hour10;
-char hour20;
-char minute10;
-char minute20;
-char minute30;
-char minute40;
-char minute50;
+int h1 h2 m1 m2;
 
-	for (h1 = 0; h1 <= 24; h1++)
+	for (h1 = 0; h1 < 3; h1++)
 	{
-		for (m1 = 0; m1 < 60; m1++)
+		if(h1 < 2)
 		{
-			if (h1 < 10)
+			for (h2 = 0; h2 < 10; h2++)
+			{
+				for (m1 = 0; m1 < 6; m1++)
 				{
-				_putchar('0');
-				_putchar(h1 + '0');
+					for (m2 = 0; m2 < 10; m2++)
+					{
+					_putchar(h1 + '0');
+					_putchar(h2 + '0');
+					_putchar(':');
+					_putchar(m1 + '0');
+					_putchar(m2 + '0');
+					_putchar('\n');
+					}
 				}
-			else if (h1 >= 10 && h1 < 20)
-				{
-				_putchar('1');
-				hour10 = h1 - 10;
-				_putchar(hour10);
-				}
-			else if (h1 >= 20 && h1 < 30)
-				{
-				_putchar('2');
-				hour20 = h1 - 20;
-				_putchar(hour20);
-				}
-			_putchar(':');
-			if (m1 < 10)
-				{
-				_putchar('0');
-				_putchar(m1 + '0');
-				}
-			else if (m1 >= 10 && m1 < 20)
-				{
-				_putchar('1');
-				minute10 = m1 - 10;
-				_putchar(minute10);
-				}
-			else if (m1 >= 20 && m1 < 30)
-                                {
-                                _putchar('2');
-				minute20 = m1 - 20;
-                                _putchar(minute20);
-                                }
-			else if (m1 >= 30 && m1 < 40)
-                                {
-                                _putchar('3');
-				minute30 = m1 - 30;
-                                _putchar(minute30);
-                                }
-			else if (m1 >= 40 && m1 < 50)
-                                {
-                                _putchar('4');
-				minute40 = m1 - 40;
-                                _putchar(minute40);
-                                }
-			else if (m1 >= 50 && m1 < 60)
-                                {
-                                _putchar('5');
-				minute50 = m1 - 50;
-                                _putchar(minute50);
-                                }
-			_putchar('\n');
+			}
 		}
-	}
-
+		else
+		{
+			for (h2 = 0; h2 < 4; h2++)
+			{
+				for (m1 = 0; m1 < 6; m1++)
+                                {
+					for (m2 = 0; m2 < 10; m2++)
+					{
+					_putchar(h1 + '0');
+					_putchar(h2 + '0');
+					_putchar(':');
+					_putchar(m1 + '0');
+					_putchar(m2 + '0');
+					_putchar('\n');
+					}
+				}
+			}
+		}
+	}	
 }
