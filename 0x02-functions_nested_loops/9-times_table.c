@@ -20,19 +20,28 @@ int dg1, dg2;
 		for (y = 0; y < 10; y++)
 		{
 		z = x * y;
-		if (z > 10)
-		{
-		dg1 = 32;
-		}
-		else
-		{
-		dg1 = z / 10;
-		}
-		dg2 = z % 10;
-		_putchar(dg1 + '0');
-		_putchar(dg2 + '0');
-		_putchar(32);
-		_putchar(',');
+
+			while (dg1 >= 10)
+			{
+			dg1 = dg1 / 10;
+			}
+			dg2 = z % 10;
+
+			if (z < 10)
+			{
+			_putchar(32);
+			}
+			else if (z > 9)
+			{
+			_putchar(dg1 + '0');
+			}
+			_putchar(dg2 + '0');
+			_putchar(',');
+			if (y < 9)
+			{
+			_putchar(32);
+			_putchar(32);
+			}
 		}
 	_putchar('\n');
 	}
