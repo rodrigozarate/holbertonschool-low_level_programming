@@ -18,7 +18,7 @@ int x, y, z;
 	{
 		for (y = 0; y < 10; y++)
 		{
-		z = x * y;
+		z = (x + '0') * (y + '0');
 		_putchar(z);
 		_putchar(',');
 		}
