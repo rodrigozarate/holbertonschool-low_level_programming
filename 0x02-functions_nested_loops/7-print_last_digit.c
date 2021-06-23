@@ -8,12 +8,13 @@
 
 /**
 * print_last_digit - Print last digit
-* Return: value of last digit
+* Return: void
+* @rza: int to be tested
 */
-int print_last_digit(void)
+
+int print_last_digit(int rza)
 {
-/* count char digits */
-/* select just last */
-/* pass it to return */
-return (lastDigit);
+result = (rza % 10);
+_putchar('0' + rza);
+return (result);
 }
