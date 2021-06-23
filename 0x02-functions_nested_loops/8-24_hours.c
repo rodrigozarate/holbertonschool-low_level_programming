@@ -29,7 +29,7 @@ int m1;
 				{
 				_putchar(h1);	
 				}
-			_putchar(":");
+			_putchar(':');
 			if (m1 < 10)
 				{
 				_putchar('0');
@@ -39,7 +39,7 @@ int m1;
 				{
 				_putchar(m1);
 				}
-			_putchar("\n");
+			_putchar('\n');
 		}
 	}
 
