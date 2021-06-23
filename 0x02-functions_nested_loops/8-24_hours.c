@@ -18,26 +18,26 @@ int m1;
 
 	for (h1 = 0; h1<=24; h1++) 
 	{
-		for (m1 =0; m1 < 60; m1++)
+		for (m1 = 0; m1 < 60; m1++)
 		{
 			if (h1 < 10)
 				{
 				_putchar('0');
-				_putchar(h1);
+				_putchar(h1 + '0');
 				}
 				else
 				{
-				_putchar(h1);	
+				_putchar(h1 + '0');	
 				}
 			_putchar(':');
 			if (m1 < 10)
 				{
 				_putchar('0');
-				_putchar(m1);
+				_putchar(m1 + '0');
 				}
 				else
 				{
-				_putchar(m1);
+				_putchar(m1 + '0');
 				}
 			_putchar('\n');
 		}
