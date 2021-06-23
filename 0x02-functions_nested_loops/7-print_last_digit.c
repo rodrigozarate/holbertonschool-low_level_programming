@@ -14,7 +14,7 @@
 
 int print_last_digit(int rza)
 {
-result = (rza % 10);
+result = rza % 10;
 _putchar('0' + rza);
 return (result);
 }
