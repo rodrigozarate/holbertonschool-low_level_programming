@@ -14,9 +14,9 @@ void times_table(void)
 {
 int x, y, z;
 
-	for (x = 48; x < 57; x++)
+	for (x = '0'; x < '10'; x++)
 	{
-		for (y = 48; y < 57; y++)
+		for (y = '0'; y < '10'; y++)
 		{
 		z = x * y;
 		_putchar(z + '0');
