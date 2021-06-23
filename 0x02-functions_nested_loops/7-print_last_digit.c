@@ -15,7 +15,16 @@
 int print_last_digit(int rza)
 {
 int result;
-result = (rza % 10);
-_putchar('0' + result);
+	if (rza >= 0)
+	{
+	result = (rza % 10);
+	_putchar('0' + result);
+	}
+	else
+	{
+	result = (rza % 10);
+	result = -result;
+	_putchar('0' + result);
+	}
 return (result);
 }
