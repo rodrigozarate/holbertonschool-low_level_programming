@@ -28,11 +28,7 @@ int dg1, dg2;
 			}
 			dg2 = z % 10;
 
-			if (z < 10)
-			{
-			_putchar(32);
-			}
-			else if (z > 9)
+			if (z > 9)
 			{
 			_putchar(dg1 + '0');
 			}
@@ -41,6 +37,10 @@ int dg1, dg2;
 			{
 			_putchar(',');
 			_putchar(32);
+				if(z > 9)
+				{
+				_putchar(32);
+				}
 			}
 		}
 	_putchar('\n');
