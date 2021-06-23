@@ -21,7 +21,7 @@ int dg1, dg2;
 		{
 		z = x * y;
 
-			while (dg1 >= 10)
+			if (dg1 >= 10)
 			{
 			dg1 = dg1 / 10;
 			}
@@ -39,7 +39,6 @@ int dg1, dg2;
 			_putchar(',');
 			if (y < 9)
 			{
-			_putchar(32);
 			_putchar(32);
 			}
 		}
