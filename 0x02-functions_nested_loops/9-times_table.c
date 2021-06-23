@@ -31,7 +31,7 @@ int dg1, dg2;
 		dg2 = z % 10;
 		_putchar(dg1);
 		_putchar(dg2);
-		_putchar(255);
+		_putchar('255');
 		_putchar(',');
 		}
 	_putchar('\n');
