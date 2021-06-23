@@ -37,7 +37,7 @@ int dg1, dg2;
 			{
 			_putchar(',');
 			_putchar(32);
-				if (dg1 < 9)
+				if (dg1 < 1)
 				{
 				_putchar(32);
 				}
