@@ -15,13 +15,13 @@ void jack_bauer(void)
 
 int h1;
 int m1;
-int hour10;
-int hour20;
-int minute10;
-int minute20;
-int minute30;
-int minute40;
-int minute50;
+char hour10;
+char hour20;
+char minute10;
+char minute20;
+char minute30;
+char minute40;
+char minute50;
 
 	for (h1 = 0; h1 <= 24; h1++)
 	{
@@ -35,13 +35,13 @@ int minute50;
 			else if (h1 >= 10 && h1 < 20)
 				{
 				_putchar('1');
-				hour10 = (h1 - '10');
+				hour10 = h1 - 10;
 				_putchar(hour10);
 				}
 			else if (h1 >= 20 && h1 < 30)
 				{
 				_putchar('2');
-				hour20 = (h1 - '20');
+				hour20 = h1 - 20;
 				_putchar(hour20);
 				}
 			_putchar(':');
@@ -53,7 +53,7 @@ int minute50;
 			else if (m1 >= 10 && m1 < 20)
 				{
 				_putchar('1');
-				minute10 = (m1 - '10');
+				minute10 = m1 - 10;
 				_putchar(minute10);
 				}
 			else if (m1 >= 20 && m1 < 30)
