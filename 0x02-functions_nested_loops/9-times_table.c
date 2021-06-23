@@ -45,7 +45,7 @@ int dg1, dg2;
 			_putchar(',');
 			_putchar(32);
 			}
-			if (x < 9)
+
 		}
 	_putchar('\n');
 	}
