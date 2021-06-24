@@ -5,6 +5,7 @@
 */
 
 #include "holberton.h"
+#include <stdio.h>
 
 /**
 * print_to_98 - Print to 98 from n
