@@ -10,6 +10,7 @@
 /**
 * print_to_98 - Print to 98 from n
 * Return: Zero
+* @n: the number to evaluate
 */
 void print_to_98(int n)
 {
