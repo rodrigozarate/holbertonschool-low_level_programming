@@ -11,5 +11,6 @@ void print_triangle(int size);
 void more_numbers(void);
 void print_most_numbers(void);
 void print_square(int matrix);
+void print_line(int n);
 
 #endif
