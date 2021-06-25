@@ -1,14 +1,6 @@
-0x04. C - More functions, more nested loops
+# 0x04. C - More functions, more nested loops
 
-    Foundations > Low-level programming & Algorithm > Hatching out
-    By Julien Barbier, co-founder & CEO at Holberton School
-    Ongoing project - started 06-24-2021, must end by 06-25-2021 (in about 13 hours) - you're done with 0% of tasks.
-    Checker will be released at 06-24-2021 12:00 PM
-    QA review fully automated.
-
-Resources
-
-Read or watch:
+## Read or watch:
 
     Nested while loops
     C - Functions
@@ -16,10 +8,9 @@ Read or watch:
     What is the purpose of a function prototype?
     C - Header Files (stop before the “Once-Only Headers” paragraph)
 
-Learning Objectives
+## Learning Objectives
 
-At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
-General
+### General
 
     What are nested loops and how to use them
     What is a function and how do you use functions
@@ -29,8 +20,8 @@ General
     What are the gcc flags -Wall -Werror -pedantic -Wextra -std=gnu89
     What are header files and how to to use them with #include
 
-Requirements
-General
+## Requirements
+### General
 
     Allowed editors: vi, vim, emacs
     All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
@@ -51,10 +42,8 @@ More Info
 You do not have to understand the call by reference (address), stack, static variables, recursions or arrays, yet.
 Quiz questions
 
-Show
-Tasks
-0. isupper
-mandatory
+## Tasks
+### 0. isupper
 
 Write a function that checks for uppercase character.
 
@@ -95,8 +84,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 0-isupper.c
 
-1. isdigit
-mandatory
+### 1. isdigit
 
 Write a function that checks for a digit (0 through 9).
 
@@ -137,8 +125,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 1-isdigit.c
 
-2. Collaboration is multiplication
-mandatory
+### 2. Collaboration is multiplication
 
 Write a function that multiplies two integers.
 
@@ -171,8 +158,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 2-mul.c
 
-3. The numbers speak for themselves
-mandatory
+### 3. The numbers speak for themselves
 
 Write a function that prints the numbers, from 0 to 9, followed by a new line.
 
@@ -203,8 +189,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 3-print_numbers.c
 
-4. I believe in numbers and signs
-mandatory
+### 4. I believe in numbers and signs
 
 Write a function that prints the numbers, from 0 to 9, followed by a new line.
 
@@ -236,8 +221,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 4-print_most_numbers.c
 
-5. Numbers constitute the only universal language
-mandatory
+### 5. Numbers constitute the only universal language
 
 Write a function that prints 10 times the numbers, from 0 to 14, followed by a new line.
 
@@ -277,8 +261,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 5-more_numbers.c
 
-6. The shortest distance between two points is a straight line
-mandatory
+### 6. The shortest distance between two points is a straight line
 
 Write a function that draws a straight line in the terminal.
 
@@ -318,8 +301,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 6-print_line.c
 
-7. I feel like I am diagonally parked in a parallel universe
-mandatory
+### 7. I feel like I am diagonally parked in a parallel universe
 
 Write a function that draws a diagonal line on the terminal.
 
@@ -369,8 +351,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 7-print_diagonal.c
 
-8. You are so much sunshine in every square inch
-mandatory
+### 8. You are so much sunshine in every square inch
 
 Write a function that prints a square, followed by a new line.
 
@@ -419,8 +400,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 8-print_square.c
 
-9. Fizz-Buzz
-mandatory
+### 9. Fizz-Buzz
 
 The “Fizz-Buzz test” is an interview question designed to help filter out the 99.5% of programming job candidates who can’t seem to program their way out of a wet paper bag.
 
@@ -440,8 +420,7 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 9-fizz_buzz.c
 
-10. Triangles
-mandatory
+### 10. Triangles
 
 Write a function that prints a triangle, followed by a new line.
 
@@ -506,4 +485,5 @@ Repo:
     Directory: 0x04-more_functions_nested_loops
     File: 10-print_triangle.c
 
-
+#### Why I'm here
+It's been a very long day, I'm tired...
