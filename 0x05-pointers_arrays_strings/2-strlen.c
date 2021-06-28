@@ -14,5 +14,10 @@
 
 int _strlen(char *s)
 {
-	return (strlen(*s));
+int x;
+	if (x = *s; x > 0;)
+	{
+		x--;
+	}
+	return (x);
 }
