@@ -15,10 +15,10 @@
 int _strlen(char *s)
 {
 int x;
-x = *s;
-	while ( x > 0)
+x = 0;
+	while ( x < *s.Length)
 	{
-		x--;
+		x++;
 	}
 	return (x);
 }
