@@ -27,5 +27,5 @@ x = 0;
 	{
 		lrev[z]=s[y];
 	}
-	s=lrev;
+	s=&lrev;
 }
