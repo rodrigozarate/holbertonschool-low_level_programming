@@ -8,7 +8,7 @@
 
 /**
 * _strlen - Returns lenght of a string
-* @s: char
+* @*s: char
 * Return: lenght of string in s
 */
 
