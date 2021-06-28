@@ -18,7 +18,7 @@ int x;
 x = 0;
  	while(str[x] != '\0')
 	{
-		putchar(str[x]);
+		_putchar(str[x]);
 		x++;
 	}
 }
