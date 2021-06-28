@@ -25,4 +25,5 @@ x = 0;
 	{
 		_putchar(s[y]);
 	}
+	_putchar('\0');
 }
