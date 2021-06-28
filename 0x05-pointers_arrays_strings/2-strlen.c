@@ -16,7 +16,7 @@ int _strlen(char *s)
 {
 int x;
 x = 0;
-	while ( x < *s.Length)
+	while ( s[x] != '\0')
 	{
 		x++;
 	}
