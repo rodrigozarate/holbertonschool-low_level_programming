@@ -15,7 +15,8 @@
 int _strlen(char *s)
 {
 int x;
-	if (x = *s; x > 0;)
+x = *s;
+	while ( x > 0)
 	{
 		x--;
 	}
