@@ -35,7 +35,7 @@ y = str;
 	}
 	y +=  m;
 	p = p + m;
-	while (p < x)
+	while (p <= x)
 	{
 	_putchar(*y);
 	p++;
