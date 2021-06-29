@@ -30,9 +30,9 @@ y = 0;
 		if (y < (n - 1))
 		{
 			printf(", ");
-			printf("\n");
 		}
 		x++;
 		y++;
 	}
+	printf("\n");
 }
