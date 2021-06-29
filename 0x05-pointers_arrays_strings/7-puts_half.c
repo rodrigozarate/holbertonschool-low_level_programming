@@ -29,7 +29,7 @@ y = str;
 	if (x % 2 != 0)
 	{
 	/* check if is odd */
-	m = (x - 2) / 2;
+	m = (x + 1) / 2;
 	}
 	else
 	{
