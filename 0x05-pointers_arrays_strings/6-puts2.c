@@ -24,10 +24,11 @@ y = str;
 	{
 		x++;
 	}
-	while (p < (x / 2))
+	while (p < ((x / 2) + 1))
 	{
 	_putchar(*y);
 	p++;
 	y += 2;
 	}
+	_putchar('\n');
 }
