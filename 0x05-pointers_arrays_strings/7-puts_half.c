@@ -37,9 +37,9 @@ y = str;
 	m = x / 2;
 	}
 	/* move pointer forward */
-	y +=  m - x;
+	y = y + m;
 	p = p + m;
-	while (p <= x)
+	while (p < x)
 	{
 	_putchar(*y);
 	p++;
