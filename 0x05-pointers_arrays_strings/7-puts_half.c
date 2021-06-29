@@ -29,7 +29,7 @@ y = str;
 	if (x % 2 != 0)
 	{
 	/* check if is odd */
-	m = (x - 1) / 2;
+	m = (x - 2) / 2;
 	}
 	else
 	{
@@ -39,7 +39,7 @@ y = str;
 	/* move pointer forward */
 	y = y + m;
 	p = p + m;
-	while (p <= x - 1)
+	while (p < x)
 	{
 	_putchar(*y);
 	p++;
