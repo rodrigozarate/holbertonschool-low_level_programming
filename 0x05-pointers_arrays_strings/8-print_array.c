@@ -5,6 +5,7 @@
 */
 
 #include "holberton.h"
+#include <stdio.h>
 
 /**
 * print_array - Prints n elemnts of an array.
