@@ -18,6 +18,7 @@ int x;
 int y;
 int z = 0;
 char lrev[500];
+char *j;
 x = 0;
 	while (s[x] != '\0')
 	{
@@ -27,5 +28,6 @@ x = 0;
 	{
 		lrev[z]=s[y];
 	}
-	s=&lrev;
+	*j = lrev;
+	*s=*j;
 }
