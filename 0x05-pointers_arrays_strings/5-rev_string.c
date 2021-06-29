@@ -25,10 +25,10 @@ x = 0;
 	}
 	for (y = (x - 1); y >= 0; y--, z++)
 	{
-		lrev[z]=s[y];
+		lrev[z] = s[y];
 	}
 	for (y = 0; y < x; y++)
-        {
-                s[y]=lrev[y];
-        }
+	{
+		s[y] = lrev[y];
+	}
 }
