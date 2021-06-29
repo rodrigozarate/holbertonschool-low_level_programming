@@ -36,7 +36,8 @@ y = str;
 	/* if not odd then is even */
 	m = x / 2;
 	}
-	y =  m - x;
+	/* move pointer forward */
+	y +=  m - x;
 	p = p + m;
 	while (p <= x)
 	{
