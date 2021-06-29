@@ -22,7 +22,7 @@ y = str;
 	while (str[x] != '\0')
 	{
 		x++;
-		putchar(*y);
+		_putchar(*y);
 		y += 2;
 	}
 }
