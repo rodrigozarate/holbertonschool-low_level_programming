@@ -24,7 +24,7 @@ y = str;
 	{
 		x++;
 	}
-	while (p < ((x / 2) + 1))
+	while (p <= (x / 2))
 	{
 	_putchar(*y);
 	p++;
