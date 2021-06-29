@@ -20,7 +20,7 @@ int x = 0;
 	while (src[x] != '\0')
 	{
 	/* count */
-		*dest[x] = src[x];
+		dest[x] = src[x];
 	}
 	return(dest);
 }
