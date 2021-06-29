@@ -28,6 +28,6 @@ x = 0;
 	{
 		lrev[z]=s[y];
 	}
-	*j = &lrev;
+	*j = lrev;
 	s=j;
 }
