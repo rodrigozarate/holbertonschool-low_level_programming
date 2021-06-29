@@ -21,6 +21,8 @@ int x = 0;
 	{
 	/* count */
 		dest[x] = src[x];
+		x++;
 	}
+	dest[x] = '\0';
 	return(dest);
 }
