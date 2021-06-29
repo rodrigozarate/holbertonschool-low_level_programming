@@ -16,6 +16,7 @@ void puts2(char *str)
 {
 int x;
 int p = 0;
+int m = 0;
 char *y;
 x = 0;
 y = str;
@@ -24,7 +25,11 @@ y = str;
 	{
 		x++;
 	}
-	while (p <= (x / 2))
+	if(x % 2 != 0)
+	{
+	m = 1;
+	}
+	while (p <= ((x / 2) + m))
 	{
 	_putchar(*y);
 	p++;
