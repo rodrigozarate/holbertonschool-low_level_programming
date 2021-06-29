@@ -23,17 +23,20 @@ y = str;
 
 	while (str[x] != '\0')
 	{
+	/* count */
 		x++;
 	}
 	if (x % 2 != 0)
 	{
-	m = x / 2;
+	/* check if is odd */
+	m = (x - 1) / 2;
 	}
 	else
 	{
-	m = (x - 1) / 2;
+	/* if not odd then is even */
+	m = x / 2;
 	}
-	y +=  m;
+	y =  m - x;
 	p = p + m;
 	while (p <= x)
 	{
