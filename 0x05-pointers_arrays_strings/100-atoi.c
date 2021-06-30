@@ -21,9 +21,13 @@ int a = 0;
 int plus = 43;
 int less = 45; 
 /* if ascii > 48 && < 57 */
-	while(s[a])
+	while (s[a])
 	{
-		if(s[a] > 48 && s[a] < 57)
+		if (s[a] == pluss || s[a] == less)
+		{
+		putchar(s[a]);
+		} 
+		if (s[a] > x && s[a] < y)
 		{
 		putchar(s[a]);
 		}
