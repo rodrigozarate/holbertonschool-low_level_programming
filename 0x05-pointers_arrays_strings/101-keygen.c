@@ -19,10 +19,10 @@ int main(void)
 /* set ascii min limit */
 int x = 32;
 /* set ascii max limit */
-int y = 122;
+int y = 127;
 /* set lenght */
 int k;
-int z = 100;
+int z = 33;
 int a = 0;
 char p[100];
 /* seed random with time */
@@ -33,7 +33,7 @@ srand(time(0));
 	/* count to z limit */
 		k = rand() % 100;
 			/* check if is in valid ascii range */
-			if(k >= x && k <= y)
+			if(k > x && k < y)
 			{
 			p[a] = k;
 			a++;
