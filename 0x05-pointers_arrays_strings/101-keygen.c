@@ -16,19 +16,17 @@
 
 int main(void)
 {
+/* set ascii min limit */
+int x = 32;
+/* set ascii max limit */
+int y = 122;
+/* set lenght */
+int k;
+int z = 50;
+int a = 0;
+char p[50];
 /* seed random with time */
 srand(time(0));
-/* set ascii min limit */
-int x;
-x  = 32;
-/* set ascii max limit */
-int y;
-y = 122;
-/* set lenght */
-int z, a, k;
-z  = 50;
-a = 0;
-char p[50];
 
 	while (a < z)
 	{
