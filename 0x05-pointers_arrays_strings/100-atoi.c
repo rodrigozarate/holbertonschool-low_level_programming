@@ -23,7 +23,7 @@ int less = 45;
 /* if ascii > 48 && < 57 */
 	while (s[a])
 	{
-		if (s[a] == pluss || s[a] == less)
+		if (s[a] == plus || s[a] == less)
 		{
 		putchar(s[a]);
 		} 
@@ -37,4 +37,5 @@ int less = 45;
 		}
 	a++;
 	}
+	return (0);
 }
