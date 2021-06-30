@@ -22,9 +22,9 @@ int x = 32;
 int y = 127;
 /* set lenght */
 int k;
-int z = 33;
+int z = 9;
 int a = 0;
-char p[100];
+char p[10];
 /* seed random with time */
 srand(time(0));
 
