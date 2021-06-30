@@ -9,7 +9,8 @@
 #include <stdlib.h>
 
 /**
-* atoi - Remove letters.
+* _atoi - Remove letters.
+* @s: string
 * Return: void
 */
 
@@ -19,14 +20,14 @@ int x = 48;
 int y = 57;
 int a = 0;
 int plus = 43;
-int less = 45; 
+int less = 45;
 /* if ascii > 48 && < 57 */
 	while (s[a])
 	{
 		if (s[a] == plus || s[a] == less)
 		{
 		putchar(s[a]);
-		} 
+		}
 		if (s[a] > x && s[a] < y)
 		{
 		putchar(s[a]);
