@@ -19,13 +19,15 @@ int main(void)
 /* seed random with time */
 srand(time(0));
 /* set ascii min limit */
-int x = 32;
+int x;
+x  = 32;
 /* set ascii max limit */
-int y = 122;
+int y;
+y = 122;
 /* set lenght */
-int z = 50;
-int a = 0;
-int k;
+int z, a, k;
+z  = 50;
+a = 0;
 char p[50];
 
 	while (a < z)
