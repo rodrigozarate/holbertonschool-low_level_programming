@@ -9,31 +9,32 @@
 
 /**
 * leet - encode to leet.
+* @k: the string to be evaluated.
 * Return: the pointer to dest
 */
 
-char *leet(char *)
+char *leet(char *k)
 {
 int i = 0;
 /* walk string */
-	while (*[i])
+	while (k[i])
 	{
 		/* test if character is on the list */
-		printf(*[i]);
-		if (*[i] == 'a' || *[i] == 'A')
-		*[i] = 4;
-		if (*[i] == 'e' || *[i] == 'E')
-		*[i] = 3;
-		if (*[i] == 'o' || *[i] == 'O')
-		*[i] = 0;
-		if (*[i] == 't' || *[i] == 'T')
-		*[i] = 7;
-		if (*[i] == 'l' || *[i] == 'L')
-		*[i] = 1;
+		printf(k[i]);
+		if (k[i] == 'a' || k[i] == 'A')
+		k[i] = '4';
+		if (k[i] == 'e' || k[i] == 'E')
+		k[i] = 3;
+		if (k[i] == 'o' || k[i] == 'O')
+		k[i] = 0;
+		if (k[i] == 't' || k[i] == 'T')
+		k[i] = 7;
+		if (k[i] == 'l' || k[i] == 'L')
+		k[i] = 1;
 		i++;
 	}
 /* if on the list change */
 /* else continue */
 /* append null */
-return (*);
+return (k);
 }
