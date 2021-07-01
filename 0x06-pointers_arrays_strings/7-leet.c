@@ -14,10 +14,26 @@
 
 char *leet(char *)
 {
+int i = 0;
 /* walk string */
-/* test if character is on the list */
+	while (*[i])
+	{
+		/* test if character is on the list */
+		printf(*[i]);
+		if (*[i] == 'a' || *[i] == 'A')
+		*[i] = 4;
+		if (*[i] == 'e' || *[i] == 'E')
+		*[i] = 3;
+		if (*[i] == 'o' || *[i] == 'O')
+		*[i] = 0;
+		if (*[i] == 't' || *[i] == 'T')
+		*[i] = 7;
+		if (*[i] == 'l' || *[i] == 'L')
+		*[i] = 1;
+		i++;
+	}
 /* if on the list change */
 /* else continue */
 /* append null */
-return();
+return (*);
 }
