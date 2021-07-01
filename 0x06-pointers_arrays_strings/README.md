@@ -27,7 +27,7 @@ Write a function that concatenates two strings.
 Directory: 0x06-pointers_arrays_strings
 File: 0-strcat.c
 
-## 1. strncat 
+### 1. strncat 
 Write a function that concatenates two strings.
 
     Prototype: char *_strncat(char *dest, char *src, int n);
@@ -38,53 +38,59 @@ Write a function that concatenates two strings.
 
 
 Directory: 0x06-pointers_arrays_strings
+
 File: 1-strncat.c
 
-## 2. strncpy
+### 2. strncpy
 Write a function that copies a string.
 
     Prototype: char *_strncpy(char *dest, char *src, int n);
     Your function should work exactly like strncpy
 
 Directory: 0x06-pointers_arrays_strings
+
 File: 2-strncpy.c
 
-## 3. strcmp 
+### 3. strcmp 
 Write a function that compares two strings.
 
     Prototype: int _strcmp(char *s1, char *s2);
     Your function should work exactly like strcmp
 
 Directory: 0x06-pointers_arrays_strings
+
 File: 3-strcmp.c
 
-## 4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy
+### 4. I am a kind of paranoid in reverse. I suspect people of plotting to make me happy
 Write a function that reverses the content of an array of integers.
 
     Prototype: void reverse_array(int *a, int n);
     Where n is the number of elements of the array
 
 Directory: 0x06-pointers_arrays_strings
+
 File: 4-rev_array.c
 
-## 5. Always look up
+### 5. Always look up
 Write a function that changes all lowercase letters of a string to uppercase.
 
     Prototype: char *string_toupper(char *);
 
 Directory: 0x06-pointers_arrays_strings
+
 File: 5-string_toupper.c
 
-## 6. Expect the best. Prepare for the worst. Capitalize on what comes
+### 6. Expect the best. Prepare for the worst. Capitalize on what comes
 Write a function that capitalizes all words of a string.
 
     Prototype: char *cap_string(char *);
     Separators of words: space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and }
 
 Directory: 0x06-pointers_arrays_strings
+
 File: 6-cap_string.c
 
-## 7. Mozart composed his music not for the elite, but for everybody 
+### 7. Mozart composed his music not for the elite, but for everybody 
 Write a function that encodes a string into 1337.
 
     Letters a and A should be replaced by 4
@@ -99,12 +105,13 @@ Write a function that encodes a string into 1337.
     You are not allowed to use any ternary operation
 
 Directory: 0x06-pointers_arrays_strings
+
 File: 7-leet.c
 
 #### Why I'm here
 It's always goos to see you arround here.
 
 
-
+=^`.´^=
 
 
