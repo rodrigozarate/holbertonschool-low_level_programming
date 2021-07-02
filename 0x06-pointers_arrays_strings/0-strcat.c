@@ -11,6 +11,7 @@
 * _strcat - Append scr to dest.
 * @dest: final string concatenated
 * @src: an string
+* @dest: destyne string
 * Return: the pointer to dest
 */
 
@@ -19,9 +20,11 @@ char *_strcat(char *dest, char *src)
 int x;
 int y;
 int z;
+int i;
+int j;
 
 /* count first string */
-	while (scr[x])
+	while (src[x])
 	{
 		x++;
 	}
