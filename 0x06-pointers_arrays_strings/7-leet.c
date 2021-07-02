@@ -20,17 +20,17 @@ int i = 0;
 	while (k[i])
 	{
 		/* test if character is on the list */
-		printf(k[i]);
+
 		if (k[i] == 'a' || k[i] == 'A')
 		k[i] = '4';
 		if (k[i] == 'e' || k[i] == 'E')
-		k[i] = 3;
+		k[i] = '3';
 		if (k[i] == 'o' || k[i] == 'O')
-		k[i] = 0;
+		k[i] = '0';
 		if (k[i] == 't' || k[i] == 'T')
-		k[i] = 7;
+		k[i] = '7';
 		if (k[i] == 'l' || k[i] == 'L')
-		k[i] = 1;
+		k[i] = '1';
 		i++;
 	}
 /* if on the list change */
