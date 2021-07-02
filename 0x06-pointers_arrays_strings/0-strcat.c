@@ -17,8 +17,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-int x;
-int y;
+int x = 0;
+int y = 0;
 int z;
 int i;
 int j;
@@ -32,16 +32,16 @@ int j;
 	while (dest[y])
 	{
 		y++;
-	}	
+	}
 /* create a new string that can hold the two strings */
 
 /* copy value of string one, then string two */
 	for (i = y, j = 0; i < y + x; i++, j++)
 	{
-		dest[i] = src[j]; 
+		dest[i] = src[j];
 	}
 	z = x + y + 1;
 	dest[z] = '\0';
 /* append null */
-return(dest);
+return (dest);
 }
