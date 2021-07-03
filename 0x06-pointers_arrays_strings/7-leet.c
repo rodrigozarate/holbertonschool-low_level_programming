@@ -1,7 +1,7 @@
 /*
 * File: 7-leet.c
 * Author: Rodrigo Zárate Algecira
-* Date: Thursday 01 july 2021
+* Date: Friday 02 july 2021
 */
 
 #include "holberton.h"
@@ -16,25 +16,22 @@
 char *leet(char *k)
 {
 int i = 0;
+int m;
+/* define patterns"
+char numpat[] = "43071";
+char lowpat[] = "aeotl";
+char upppat[] = "AEOTL";
 /* walk string */
 	while (k[i])
 	{
-		/* test if character is on the list */
-
-		if (k[i] == 'a' || k[i] == 'A')
-		k[i] = '4';
-		if (k[i] == 'e' || k[i] == 'E')
-		k[i] = '3';
-		if (k[i] == 'o' || k[i] == 'O')
-		k[i] = '0';
-		if (k[i] == 't' || k[i] == 'T')
-		k[i] = '7';
-		if (k[i] == 'l' || k[i] == 'L')
-		k[i] = '1';
+		for (m = 0; m <= 4; m++)
+		/* walk on any case in each character */
+			if (k[i] == lowpat[m] || k[i] == uppat[m])
+			{
+			/* if matches low or up pat replace */
+				k[i] = numpat[m];
+			}
 		i++;
 	}
-/* if on the list change */
-/* else continue */
-/* append null */
 return (k);
 }
