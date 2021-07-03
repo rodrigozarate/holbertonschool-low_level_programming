@@ -7,7 +7,7 @@
 #include "holberton.h"
 
 /**
-* _strncat - glue two strings.
+* _strncpy - copy a string.
 * @dest: array
 * @src: array
 * @n: elements of array
