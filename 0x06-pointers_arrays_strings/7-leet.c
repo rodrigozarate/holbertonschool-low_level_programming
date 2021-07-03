@@ -5,7 +5,6 @@
 */
 
 #include "holberton.h"
-#include <stdio.h>
 
 /**
 * leet - encode to leet.
