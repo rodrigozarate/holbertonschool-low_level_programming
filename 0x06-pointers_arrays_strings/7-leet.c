@@ -25,7 +25,7 @@ char upppat[] = "AEOTL";
 	{
 		for (m = 0; m <= 4; m++)
 		/* walk on any case in each character */
-			if (k[i] == lowpat[m] || k[i] == uppat[m])
+			if (k[i] == lowpat[m] || k[i] == upppat[m])
 			{
 			/* if matches low or up pat replace */
 				k[i] = numpat[m];
