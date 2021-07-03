@@ -1,24 +1,44 @@
-/* space, tabulation, new line, ,, ;, ., !, ?, ", (, ), {, and } */
-/* if found any of the above capitalize next character */
-char *cap_string(char g)
-{
-int x = 0;
+/*
+* File: 6-cap_string.c
+* Author: Rodrigo Zárate Algecira
+* Date: Friday 02 july 2021
+*/
 
-/* walk the string */
-	while (g[x])
+#include "holberton.h"
+
+/**
+* cap_string - capitalize words.
+* @s: the string to be evaluated.
+* Return: char
+*/
+
+char *cap_string(char *s)
+{
+	int i = 0, j;
+	char a[] = " \t\n,;.!?\"(){}";
+	/* define the list of characters that set the end of a word */
+	while (*(s + i))
+	/* walk the string */
 	{
-		/* if found character of list */
-		if (g[x] == " " || g[x] == '\n' || g[x] == ";")
+		if (*(s + i) >= 'a' && *(s + i) <= 'z')
+		/* chaek for ASCII lowe range */
 		{
-			/* guess if is in range of lowercase */
-			if (g[x + 1] > 32 && g[x + 1] < 126)
+			if (i == 0)
+			/* being the first */
+				*(s + i) -= 32;
+			else
 			{
-				/* sum to make it upper */
-				g[x] = x + 12;
+				for (j = 0; j <= 12; j++)
+				/* walk the words delimiter */
+				{
+					if (a[j] == *(s + i - 1))
+					/* previuos is in the list */
+						*(s + i) -= 32;
+						/* go to uppercase */
+				}
 			}
 		}
-		/* Capitalize next */
-		x++;
+		i++;
 	}
-
+	return (s);
 }
