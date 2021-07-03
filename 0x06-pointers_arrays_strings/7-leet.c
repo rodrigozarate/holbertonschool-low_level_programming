@@ -17,7 +17,7 @@ char *leet(char *k)
 {
 int i = 0;
 int m;
-/* define patterns"
+/* define patterns */
 char numpat[] = "43071";
 char lowpat[] = "aeotl";
 char upppat[] = "AEOTL";
