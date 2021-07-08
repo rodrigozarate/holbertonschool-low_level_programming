@@ -1,3 +1,9 @@
+/*
+* File: 0-whatsmyname.c
+* Author: Rodrigo Zárate Algecira
+* Date: Thursday 08 july 2021
+*/
+
 #include <stdio.h>
 
 /**
