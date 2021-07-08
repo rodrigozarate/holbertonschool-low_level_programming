@@ -20,4 +20,5 @@ int x;
 	{
 		printf("%s\n", argv[x]);
 	}
+return (0);
 }
