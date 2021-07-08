@@ -9,6 +9,7 @@
 /**
 * main - print name
 * @argv: vector of args
+* @argc: count of args
 * Return: int
 */
 
