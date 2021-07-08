@@ -1,10 +1,14 @@
 #include <stdio.h>
 
-**/
+/**
 * main - print name
+* @argv: vector of args
+* Return: int
 */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-  printf ("%s\n",argv[0]);
+int x;
+x = argc;
+	printf("%s\n", argv[0]);
 }
