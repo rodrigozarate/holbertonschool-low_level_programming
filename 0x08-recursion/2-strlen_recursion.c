@@ -21,5 +21,5 @@ int x = 0;
 	x += _strlen_recursion(s + 1);
 	}
 	/* on getting back return the sum */
-	return(x);
+	return (x);
 }
