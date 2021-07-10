@@ -20,6 +20,8 @@ int _strlen_recursion(char *s)
 	}
 	else
 	{
-		return(s);
+		_putchar(s);
+		_putchar('\n');
+		return(0);
 	}
 }
