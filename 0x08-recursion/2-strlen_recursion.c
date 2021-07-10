@@ -14,14 +14,12 @@
 
 int _strlen_recursion(char *s)
 {
+int x = 0;
 	if (*s != '\0')
 	{
-		_strlen_recursion(s + 1);
+	x++
+	x +=	_strlen_recursion(s + 1);
 	}
-	else
-	{
-		_putchar(s);
-		_putchar('\n');
-		return(0);
-	}
+	/* on getting back return the sum */
+	return(x);
 }
