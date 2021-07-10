@@ -20,9 +20,13 @@ int _pow_recursion(int x, int y)
 	/* special case end -1 */
 	return (-1);
 	}
-	else if (y >= 0)
+	else if (y != 0)
 	{
-	x *= _pow_recursion(x, y - 1);
+	return (x *= _pow_recursion(x, y - 1));
 	}
-	return (x);
+	else
+	{
+	/* in case its 0 */
+	return (1);
+	}
 }
