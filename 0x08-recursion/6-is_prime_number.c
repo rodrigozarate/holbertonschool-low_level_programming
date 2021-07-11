@@ -18,7 +18,7 @@ int is_prime(int a, int b)
         if (a <= 1 || (a != b && a % b == 0))
         {
         /* not prime if minor than 1 or 1 */
-        / not prime if even */
+        /* not prime if even */
                 return (0);
         }
                 else if (a == b)
@@ -28,7 +28,7 @@ int is_prime(int a, int b)
                 return (1);
         }
         /* walk until find number given */
-        return (prime_a(a, b + 1));
+        return (is_prime(a, b + 1));
 }
 
 
