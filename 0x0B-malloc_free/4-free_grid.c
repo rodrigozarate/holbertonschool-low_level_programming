@@ -1,19 +1,26 @@
 /*
-* 1-strdup.c - exercise to try malloc
+* 4-free_grid.c - exercise to try malloc
 * Author: Rodrigo Zarate Algecira
 * Date: Juy 13 2021
 */
 
 #include "holberton.h"
-
+#include <stdlib.h>
 /**
-* _strdup - Creates an array
-* @size: size of array
-* @c: character
-* Return: NULL or a pointer
+* free_grid - Frees memry of the array
+* @height: height of array
+* @grid: the array itself
+* Return: void
 */
 
-char *_strdup(char *str)
+void free_grid(int **grid, int height)
 {
-
+	int x;
+	/* walk the grid */
+	for (x = 0; x < height; x++)
+	{
+		free(grid[x]);
+	}
+	/* clear all */
+	free(grid);
 }
