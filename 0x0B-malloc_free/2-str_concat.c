@@ -50,7 +50,7 @@ int i, x;
 	{
 		thereturnedpointer[i] = s1[i];
 	}
-	for (i = 0; i < lengthtwo; i++;
+	for (i = 0; i < lengthtwo; i++)
 	{
 		thereturnedpointer[i + lengthone] = s2[i];
 	}
