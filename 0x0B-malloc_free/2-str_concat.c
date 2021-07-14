@@ -31,8 +31,9 @@ int i, x;
 		i++;
 		lengthtwo++;
 	}
+
 	if (s1 == NULL)
-	}
+	{
 		lengthone = 0;
 	}
 	if (s2 == NULL)
