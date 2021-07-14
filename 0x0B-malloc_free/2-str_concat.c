@@ -21,22 +21,20 @@ int lengthone = 0;
 int lengthtwo = 0;
 
 int i, x;
-	for (i = 0; s1[i]; i++)
+	if (s1 == NULL)
+		lengthone = 0;
+	else
 	{
-		lengthone++;
-	}
-	for (i = 0; s2[i]; i++)
-	{
-		lengthtwo++;
+		for (i = 0; s1[i]; i++)
+			lengthone++;
 	}
 
-	if (s1 == NULL)
-	{
-		lengthone = 0;
-	}
 	if (s2 == NULL)
-	{
 		lengthtwo = 0;
+	else
+	{
+		for (i = 0; s2[i]; i++)
+			lengthtwo++;
 	}
 	x = lengthone + lengthtwo + 1;
 	thereturnedpointer = malloc(x * sizeof(char));
