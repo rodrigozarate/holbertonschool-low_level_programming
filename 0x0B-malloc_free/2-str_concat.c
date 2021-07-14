@@ -21,14 +21,12 @@ int lengthone = 0;
 int lengthtwo = 0;
 
 int i, x;
-	while (s1[i])
+	for (i = 0; s1[i]; i++)
 	{
-		i++;
 		lengthone++;
 	}
-	while (s2[i])
+	for (i = 0; s2[i]; i++)
 	{
-		i++;
 		lengthtwo++;
 	}
 
