@@ -8,13 +8,13 @@
 #include <stdlib.h>
 
 /**
-* _str_concat - Join  tow strings
+* str_concat - Join  tow strings
 * @s1: string one
 * @s2: string two
 * Return: NULL or a pointer
 */
 
-char *_str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 char *thereturnedpointer;
 int lengthone = 0;
