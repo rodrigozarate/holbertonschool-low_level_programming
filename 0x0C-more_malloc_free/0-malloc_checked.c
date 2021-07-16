@@ -20,7 +20,7 @@ void *malloc_checked(unsigned int b)
 void *p
 
 p = malloc(b);
-	if (x == NULL)
+	if (p == NULL)
 	{
 	/* memory allocation fails */
 		exit(98);
