@@ -22,11 +22,11 @@ int *array_range(int min, int max)
 	{
 		return (NULL);
 	}
-/* void pointer */
-void *p;
+/* int pointer to match */
+int *p;
 
 /* include max and min */
-p = malloc(sizeof int * (max - min +1));
+p = malloc(sizeof(int) * (max - min +1));
 
 	if (p == NULL)
 	{
