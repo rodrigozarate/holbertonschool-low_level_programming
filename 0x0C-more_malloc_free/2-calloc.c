@@ -30,7 +30,7 @@ p = malloc(size * nmemb);
 	if (p == NULL)
 	{
 	/* memory allocation fails */
-		exit(NULL);
+		return (NULL);
 	}
 
 /* unsigned to compare unsigned */
