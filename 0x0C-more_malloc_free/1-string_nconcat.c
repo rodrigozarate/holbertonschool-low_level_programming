@@ -18,7 +18,7 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-void *p;
+char *p;
 
 /* if NULL is passed, treat it as an empty string */
 	if (s1 == NULL)
@@ -48,7 +48,7 @@ unsigned int i;
 	for (i = lengths1; i < lengths1 + n; i++)
 		p[i] = s2[i - lengths1];
 	/* null terminated */
-	p[j] = '\0';
+	p[i] = '\0';
 /* return the pointer */
 return (p);
 }
