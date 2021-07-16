@@ -7,6 +7,7 @@
 #include "holberton.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
 * _calloc - shows the basic function of calloc
@@ -22,8 +23,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-/* void pointer */
-void *p;
+/* void pointer dont work ask why */
+char *p;
 
 p = malloc(size * nmemb);
 
