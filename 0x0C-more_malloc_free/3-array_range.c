@@ -17,13 +17,16 @@
 
 int *array_range(int min, int max)
 {
+/* int pointer to match */
+int *p;
+/* using conventio ijk */
+int i, j = 0;
+
 /* If min > max, return NULL */	
 	if (min > max)
 	{
 		return (NULL);
 	}
-/* int pointer to match */
-int *p;
 
 /* include max and min */
 p = malloc(sizeof(int) * (max - min +1));
@@ -33,9 +36,6 @@ p = malloc(sizeof(int) * (max - min +1));
 	/* memory allocation fails */
 		return (NULL);
 	}
-
-/* using conventio ijk */
-int i, j = 0;
 
 	/* space in p[j] start in 0 filled with value of i an so on */
 	for (i = min; i <= max; i++)
