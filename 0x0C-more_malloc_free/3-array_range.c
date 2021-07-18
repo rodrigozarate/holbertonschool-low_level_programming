@@ -19,17 +19,17 @@ int *array_range(int min, int max)
 {
 /* int pointer to match */
 int *p;
-/* using conventio ijk */
+/* using convention i j k */
 int i, j = 0;
 
-/* If min > max, return NULL */	
+/* If min > max, return NULL */
 	if (min > max)
 	{
 		return (NULL);
 	}
 
 /* include max and min */
-p = malloc(sizeof(int) * (max - min +1));
+p = malloc(sizeof(int) * (max - min + 1));
 
 	if (p == NULL)
 	{
