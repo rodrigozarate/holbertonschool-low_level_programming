@@ -18,13 +18,15 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+/* declarations on top REMEMBER mufasa */
+char *p;
+/* unsigned to compare unsigned */
+unsigned int i;
 /* If nmemb or size is 0, then _calloc returns NULL */
 	if (nmemb == 0 || size == 0)
 	{
 		return (NULL);
 	}
-/* void pointer dont work ask why */
-char *p;
 
 p = malloc(size * nmemb);
 
@@ -33,9 +35,6 @@ p = malloc(size * nmemb);
 	/* memory allocation fails */
 		return (NULL);
 	}
-
-/* unsigned to compare unsigned */
-unsigned int i;
 
 	for (i = 0; i < nmemb * size; i++)
 	{
