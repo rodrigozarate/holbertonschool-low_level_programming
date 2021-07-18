@@ -9,7 +9,7 @@
 #include <stdlib.h>
 
 /**
-* _calloc - shows the basic function of calloc
+* array_range - create array
 * @min: int
 * @max: int
 * Return: void pointer or NULL
