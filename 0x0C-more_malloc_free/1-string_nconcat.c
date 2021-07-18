@@ -28,7 +28,7 @@ unsigned int i;
 	if (s2 == NULL)
 		s2 = "";
 /* unsigned to compare unsigned */
-	
+
 	for (lengths1 = 0; s1[lengths1] != '\0'; lengths1++)
 	;
 
