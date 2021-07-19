@@ -1,4 +1,3 @@
-#ifndef OBJECT_LIKE_MACRO_RZA
-#define OBJECT_LIKE_MACRO_RZA
-#define SIZE 1024
+#ifndef SIZE
+#define SIZE (1024)
 #endif
