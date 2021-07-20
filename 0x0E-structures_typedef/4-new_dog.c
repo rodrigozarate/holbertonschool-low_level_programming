@@ -51,4 +51,5 @@ copyName[i] = '\0';
 p_New_Woof->name = copyName;
 p_New_Woof->age = age;
 p_New_Woof->owner = copyName;
+return (p_New_Woof);
 }
