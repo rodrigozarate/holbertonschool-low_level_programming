@@ -23,7 +23,7 @@ char *copyName, *copyOwner;
 dog_t *p_New_Woof = malloc(sizeof(dog_t));
 
 if (p_New_Woof == NULL)
-return (NULL);
+	return (NULL);
 /* walk strings */
 for (; name[i]; i++)
 ;
@@ -47,9 +47,9 @@ for (i = 0; name[i]; i++)
 copyName[i] = '\0';
 for (i = 0; owner[i]; i++)
 	copyOwner[i] = owner[i];
-copyName[i] = '\0';
+copyOwner[i] = '\0';
 p_New_Woof->name = copyName;
 p_New_Woof->age = age;
-p_New_Woof->owner = copyName;
+p_New_Woof->owner = copyOwner;
 return (p_New_Woof);
 }
