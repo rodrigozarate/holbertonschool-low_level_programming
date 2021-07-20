@@ -30,13 +30,13 @@ for (; name[i]; i++)
 for (; owner[j]; j++)
 ;
 copyName = malloc(sizeof(char) * (i + 1));
-if (copyName == NULL)
+	if (copyName == NULL)
 	{
 		free(p_New_Woof);
 		return (NULL);
 	}
 copyOwner = malloc(sizeof(char) * (j + 1));
-if (copyOwner == NULL)
+	if (copyOwner == NULL)
 	{
 		free(copyName);
 		free(p_New_Woof);
@@ -46,7 +46,7 @@ for (i = 0; name[i]; i++)
 	copyName[i] = name[i];
 copyName[i] = '\0';
 for (i = 0; owner[i]; i++)
-        copyOwner[i] = owner[i];
+	copyOwner[i] = owner[i];
 copyName[i] = '\0';
 p_New_Woof->name = copyName;
 p_New_Woof->age = age;
