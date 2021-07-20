@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
-* init_dog - Function 
+* init_dog - Function to init var type dog
 * @d:pointer
 * @name:pointer
 * @age:float
