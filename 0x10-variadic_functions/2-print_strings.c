@@ -19,6 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 {
 /* declare unsigned to compare an count */
 unsigned int i;
+char *word;
 
 	/* call structure */
 	va_list theList;
@@ -28,9 +29,10 @@ unsigned int i;
 	/* walk the list */
 	for (i = 0; i < n; i++)
 	{
-		if (va_arg(theList, char *))
+		word = a_arg(theList, char *);
+		if (word)
 		{
-			printf("%s", va_arg(theList, char *));
+			printf("%s", word);
 		}
 		else
 		{
