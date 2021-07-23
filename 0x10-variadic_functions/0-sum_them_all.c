@@ -15,9 +15,9 @@ int sum_them_all(const unsigned int n, ...)
 {
 /* declare unsigned to compare */
 unsigned int i;
-int sum;
+int sum = 0;
 	/* call structure */
-	va_list = theList;
+	va_list theList;
 
 	if (n == 0)
 	{
@@ -30,7 +30,7 @@ int sum;
 	{
 		sum += va_arg(theList, int);
 	}
-	va_end(the_list);
+	va_end(theList);
 
 return (sum);
 }
