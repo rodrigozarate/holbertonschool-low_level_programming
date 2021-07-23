@@ -29,7 +29,7 @@ char *word;
 	/* walk the list */
 	for (i = 0; i < n; i++)
 	{
-		word = a_arg(theList, char *);
+		word = va_arg(theList, char *);
 		if (word)
 		{
 			printf("%s", word);
