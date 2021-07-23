@@ -23,11 +23,6 @@ unsigned int i;
 	/* call structure */
 	va_list theList;
 
-	if (n < 0)
-	{
-		exit;
-	}
-
 	/* init */
 	va_start(theList, n);
 	/* walk the list */
