@@ -53,4 +53,6 @@ Write a function that prints anything.
 #### File: 3-print_all.c
 #### Why I'm here.
 Go to see a movie, Portrait de la jeune fille en feu
+Imagine that what is write here happen to you...
+Win the max price of the "baloto" in the next days
 
