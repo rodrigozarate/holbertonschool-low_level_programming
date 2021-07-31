@@ -52,7 +52,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 	else
 	{
-		lastnode = *head
+		lastnode = *head;
 		while (lastnode->next)
 		{
 			lastnode = lastnode->next;
