@@ -20,7 +20,7 @@ list = head;
 	while (list != NULL)
 	{
 	/* move one step */
-	validate = list-next;
+	validate = list>-next;
 	free(list->str);
 	free(list);
 	/* move to next step */
