@@ -23,7 +23,7 @@ size_t howmany = 0;
 	{
 		if (dt->str == NULL)
 		{
-			printf("(nil)\n");
+			printf("[0] (nil)\n");
 		}
 		else
 		{
