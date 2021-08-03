@@ -19,9 +19,9 @@ size_t howmany = 0;
 /*walk the list */
 	for (i = 0; h; i++)
 	{
-		printf("%i\n", h->n);
-	h = h->next;
+		printf("%d\n", h->n);
 	howmany++;
+	h = h->next;
 	}
 return (howmany);
 }
