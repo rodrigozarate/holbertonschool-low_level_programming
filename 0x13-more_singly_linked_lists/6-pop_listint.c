@@ -17,7 +17,7 @@ int pop_listint(listint_t **head)
 	listint_t *nodenext, *verbatim;
 	int i;
 	/* copy info */
-	verbatim = head;
+	verbatim = *head;
 	/* set i */
 	if (verbatim == NULL)
 	{
