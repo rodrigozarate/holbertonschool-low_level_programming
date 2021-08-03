@@ -18,14 +18,14 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 listint_t *newnode, *initnode;
 
 initnode = *head;
-newnode = malloc(sizeof(litsint_t));
+newnode = malloc(sizeof(listint_t));
 
 	if (newnode == NULL)
 	{
 		return (NULL);
 	}
 	/* set value */
-	newnode->n;
+	newnode->n = n;
 	/* mark end */
 	newnode->next = NULL;
 	/* List is empty */
