@@ -1,4 +1,4 @@
-/**
+/*
 * 4-free_listint.c - free list
 * Author: Rodrigo Zárate Algecira
 * Date: August 03, 2021
@@ -24,7 +24,7 @@ void free_listint(listint_t *head)
 		nodenext = verbatim->next;
 		/* free item by item */
 		free(verbatim);
-		/ move to next */
+		/* move to next */
 		verbatim = nodenext;
 	}
 }
