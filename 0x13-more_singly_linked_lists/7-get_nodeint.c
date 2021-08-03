@@ -25,8 +25,12 @@ unsigned int i = 0;
 
 	while (i < index && newnode->next)
 	{
+		newnode = newnode->next;
 		i++;
 	}
-	/* newnode = newnode->n; */
+	/* if index is not present on list */
+	if (i < index)
+		return (NULL);
+
 return (newnode);
 }
