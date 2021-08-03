@@ -7,9 +7,9 @@
 #include "lists.h"
 
 /**
-* free_listint - free list
+* pop_listint - pop list
 * @head: Pointer
-* Return: void
+* Return: int or zero if fail
 */
 
 int pop_listint(listint_t **head)
