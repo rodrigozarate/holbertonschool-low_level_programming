@@ -14,7 +14,7 @@
 
 int pop_listint(listint_t **head)
 {
-	listint_t *nodenext, *verbatim;
+	listint_t *verbatim;
 	int i;
 	/* copy info */
 	verbatim = *head;
@@ -27,15 +27,9 @@ int pop_listint(listint_t **head)
 	{
 		i = verbatim->n;
 	}
-	/* walk list */
-	while (verbatim)
-	{
-		/* assign */
-		nodenext = verbatim->next;
-		/* free item by item */
-		free(verbatim);
-		/* move to next */
-		verbatim = nodenext;
-	}
+	/* change content of head */
+	*head = verbatim->next;
+	/* free list */
+	free(verbatim);
 return (i);
 }
