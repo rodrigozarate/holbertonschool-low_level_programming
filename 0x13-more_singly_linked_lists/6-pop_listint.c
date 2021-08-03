@@ -21,7 +21,7 @@ int pop_listint(listint_t **head)
 	/* set i */
 	if (verbatim == NULL)
 	{
-		i = 0;
+		return (0);
 	}
 	else
 	{
