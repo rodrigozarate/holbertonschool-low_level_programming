@@ -14,5 +14,15 @@
 
 size_t print_listint(const listint_t *h)
 {
-
+int i;
+const listint_t *dt = h;
+size_t howmany = 0;
+/*walk the list */
+	for (i = 0; dt; i++)
+	{
+		printf("%i\n", dt->n);
+	dt = dt->netx;
+	howmany++;
+	}
+return (howmany);
 }
