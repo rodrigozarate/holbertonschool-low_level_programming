@@ -37,5 +37,5 @@ int pop_listint(listint_t **head);
 		/* move to next */
 		verbatim = nodenext;
 	}
-return(i);
+return (i);
 }
