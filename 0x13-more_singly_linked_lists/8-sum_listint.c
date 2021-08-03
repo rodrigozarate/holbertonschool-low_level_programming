@@ -12,7 +12,7 @@
 * Return: int sum or ZERO
 */
 
-int sum_listint(listint_t *head);
+int sum_listint(listint_t *head)
 {
 
 int n = 0;
