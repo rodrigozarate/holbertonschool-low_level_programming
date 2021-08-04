@@ -25,6 +25,6 @@ int n = 0;
 		head = head->next;
 		n += head->n;
 	}
-
+	n += head->n;
 return (n);
 }
