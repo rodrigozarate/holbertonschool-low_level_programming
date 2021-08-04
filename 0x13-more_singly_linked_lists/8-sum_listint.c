@@ -22,8 +22,8 @@ int n = 0;
 
 	while (head->next)
 	{
-		head = head->next;
 		n += head->n;
+		head = head->next;
 	}
 	n += head->n;
 return (n);
