@@ -1,4 +1,4 @@
-/**
+/*
 * 9-insert_nodeint.c - insert node
 * Author: Rodrigo Zárate Algecira
 * Date: August 03, 2021
