@@ -1,4 +1,4 @@
-#include main.h
+#include "main.h"
 
 /**
 * howlong - long of binary
