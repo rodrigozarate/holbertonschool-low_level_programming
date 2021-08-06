@@ -32,7 +32,7 @@ int i;
 
 	howlongis = howlong(b);
 
-	for (i = howlongis -1; i >= 0; i--)
+	for (i = howlongis - 1; i >= 0; i--)
 	{
 		/* not binary */
 		if (b[i] != '0' && b[i] != '1')
