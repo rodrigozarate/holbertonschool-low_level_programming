@@ -10,7 +10,7 @@
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 unsigned long int compare;
-unsigned int i = 0;
+int i = 0;
 
 /* Compare numbers */
 compare = n ^ m;
@@ -22,9 +22,9 @@ compare = n ^ m;
 		if ((compare & 1) == 1)
 		{
 			i++;
-			/* shift next */
-			compare >>= 1;
 		}
+		/* shift next */
+		compare >>= 1;
 	}
 return (i);
 }
