@@ -30,13 +30,13 @@ int filefrom, fileto, readfrom, writeto;
 	filefrom = open(aval[1], O_RDONLY);
 	if (filefrom == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", aval[1]), exit(98);
 	}
 	/* open file to */
-	fileto = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
+	fileto = open(aval[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fileto == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", aval[2]), exit(99);
 	}
 /* ok */
 return (0);
