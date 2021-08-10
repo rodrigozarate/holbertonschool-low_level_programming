@@ -20,7 +20,8 @@
 int main(int anum, char **aval)
 {
 /* char buffer[1024]; */
-int filefrom, fileto, readfrom, writeto;
+int filefrom, fileto;
+/*  readfrom, writeto; */
 
 	if (anum != 3)
 	{
