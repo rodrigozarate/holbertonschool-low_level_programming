@@ -15,8 +15,8 @@
 
 int freewilli(char *themem, int thefile)
 {
-	close(thefile);
 	free(themem);
+	close(thefile);
 	return (0);
 }
 
