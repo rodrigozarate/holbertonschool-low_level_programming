@@ -14,6 +14,7 @@
 
 int freewilli(char *themem)
 {
+	close(filetoread);
 	free(themem);
 	return (0);
 }
