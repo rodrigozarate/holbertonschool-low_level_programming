@@ -2,7 +2,7 @@
 #define FILESIO_H
 
 #include <sys/stat.h>
-#include <sys/ttypes.h>
+#include <sys/types.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
