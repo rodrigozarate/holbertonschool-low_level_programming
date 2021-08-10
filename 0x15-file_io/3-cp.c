@@ -41,6 +41,9 @@ int filefrom, fileto;
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", aval[2]), exit(99);
 	}
-/* ok */
+/* yucanread then copy */
+/* else fail */
+/* cant close then fail */
+/* All ok */
 return (0);
 }
