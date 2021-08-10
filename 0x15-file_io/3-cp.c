@@ -21,15 +21,14 @@
 
 int main(int anum, char **aval)
 {
-/* char buffer[1024]; */
-int filefrom, fileto;
-/*  readfrom, writeto; */
+char buffer[1024];
+int filefrom, fileto, readfrom, writeto, canclose;
 
 	if (anum != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n"), exit(97);
 	}
-	/* read the file of orogin */
+	/* read the file of origin */
 	filefrom = open(aval[1], O_RDONLY);
 	if (filefrom == -1)
 	{
@@ -41,9 +40,30 @@ int filefrom, fileto;
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", aval[2]), exit(99);
 	}
-/* yucanread then copy */
-/* else fail */
-/* cant close then fail */
+	readfrom = read(filefrom, buffer, 1024);
+	if (readfrom == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", aval[1]);
+		exit(98);
+	}
+	while (readfrom > 0)
+	{
+		/* yucanread then copy */
+		writeto = write(fileto, buffer, readfrom);
+		if (writeto == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", aval[2]);
+			exit(99);
+		}
+	}
+	/* cant close or then fail */
+	canclose = close(filefrom);
+	if (canclose == -1)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", filefrom), exit(100);
+
+	canclose = close(fileto);
+	if (canclose == -1)
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fileto), exit(100);
 /* All ok */
 return (0);
 }
