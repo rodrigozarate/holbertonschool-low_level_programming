@@ -55,7 +55,9 @@ ssize_t wfile = 0;
 	wfile = write(STDOUT_FILENO, alm, rfile);
 	if (wfile == -1)
 	{
-		freewilli(alm, filetoread);
+		free(alm);
+		close(filetoread);
+		return (0);
 	}
 free(alm);
 /* close the file */
