@@ -20,14 +20,14 @@ int thefile, wfile;
 	if (filename == NULL)
 		return (-1);
 		/* bad things happen */
-	thefile = open(filaname, O_CREAT | O_WRONLY | O_TRUNC, 0600);
+	thefile = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (thefile == -1)
 		return (-1);
 		/* bad things happen */
 	if (text_content)
 	{
 		wfile = write(thefile, text_content, strlen(text_content));
-		if (wfila == -1)
+		if (wfile == -1)
 		{
 			close(thefile);
 			return (-1);
