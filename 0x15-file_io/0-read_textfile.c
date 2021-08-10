@@ -9,12 +9,13 @@
 /**
 * freewilli - free mem
 * @themem: the malloc
+* @thefile: the file
 * Return: always 0
 */
 
-int freewilli(char *themem)
+int freewilli(char *themem, int thefile)
 {
-	close(filetoread);
+	close(thefile);
 	free(themem);
 	return (0);
 }
@@ -43,18 +44,18 @@ ssize_t wfile = 0;
 	filetoread = open(filename, O_RDONLY);
 	if (filetoread == -1)
 	{
-		freewilli(alm);
+		freewilli(alm, filetoread);
 	}
 	/* read chars until given size */
 	rfile = read(filetoread, alm, letters);
 	if (rfile == -1)
 	{
-		freewilli(alm);
+		freewilli(alm, filetoread);
 	}
 	wfile = write(STDOUT_FILENO, alm, rfile);
 	if (wfile == -1)
 	{
-		freewilli(alm);
+		freewilli(alm, filetoread);
 	}
 free(alm);
 /* close the file */
