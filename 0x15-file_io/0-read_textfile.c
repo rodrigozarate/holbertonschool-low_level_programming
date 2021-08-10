@@ -13,7 +13,7 @@
 * Return: always 0
 */
 
-int freewilli(char themem, int thefile)
+int freewilli(char *themem, int thefile)
 {
 	free(themem);
 	close(thefile);
