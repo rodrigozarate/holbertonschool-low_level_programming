@@ -44,13 +44,13 @@ ssize_t wfile = 0;
 	filetoread = open(filename, O_RDONLY);
 	if (filetoread == -1)
 	{
-		freewilli(alm, filetoread);
+		return (0);
 	}
 	/* read chars until given size */
 	rfile = read(filetoread, alm, letters);
 	if (rfile == -1)
 	{
-		freewilli(alm, filetoread);
+		return (0);
 	}
 	wfile = write(STDOUT_FILENO, alm, rfile);
 	if (wfile == -1)
