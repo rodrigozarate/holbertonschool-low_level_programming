@@ -6,6 +6,8 @@
 
 #include "main.h"
 
+#define rze STDERR_FILENO
+
 /**
 * main - copy the content and perms of a file
 * @anum: the name of teh file
@@ -31,7 +33,7 @@ int filefrom, fileto;
 	filefrom = open(aval[1], O_RDONLY);
 	if (filefrom == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", aval[1]), exit(98);
+		dprintf(rze, "Error: Can't read from file %s\n", aval[1]), exit(98);
 	}
 	/* open file to */
 	fileto = open(aval[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
