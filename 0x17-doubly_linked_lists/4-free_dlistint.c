@@ -14,14 +14,15 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *firstnode, *validation;
+	dlistint_t *firstnode;
+	dlistint_t *validation;
 	/* assing to head to traverse */
 	firstnode = head;
 	while (firstnode != NULL)
 	{
-		validate = firstnode->next;
+		validation = firstnode->next;
 		free(firstnode);
 		/* move to the next */
-		firstnode = validate;
+		firstnode = validation;
 	}
 }
