@@ -16,7 +16,7 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int compareindex;
-	
+
 	/* loop to traverse until find match */
 	for (compareindex = 0; compareindex < index; compareindex++)
 	{
@@ -25,9 +25,9 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 			head = head->next;
 		}
 	}
-	/* compare is minor than searched index */ 
+	/* compare is minor than searched index */
 	if (compareindex < index)
 		return (NULL);
 	/* in range */
-	return(head);
+	return (head);
 }
