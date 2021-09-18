@@ -20,7 +20,7 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	/* loop to traverse until find match */
 	for (cindex = 0; cindex < index && head->next; cindex++)
 	{
-			head = head->next;
+		head = head->next;
 	}
 	/* compare is minor than searched index */
 	if (cindex < index)
