@@ -10,7 +10,7 @@
 * add_dnodeint - Add node in double linked list
 * @head: pointer
 * @n: value of node
-* Return: new node 
+* Return: new node
 */
 
 dlistint_t *add_dnodeint(dlistint_t **head, const int n);
