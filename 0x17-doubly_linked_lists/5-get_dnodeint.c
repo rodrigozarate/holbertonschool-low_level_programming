@@ -15,18 +15,15 @@
 
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
-	unsigned int compareindex;
+	unsigned int cindex;
 
 	/* loop to traverse until find match */
-	for (compareindex = 0; compareindex < index; compareindex++)
+	for (cindex = 0; cindex < index && head->next; cindex++)
 	{
-		if (head->next != NULL)
-		{
 			head = head->next;
-		}
 	}
 	/* compare is minor than searched index */
-	if (compareindex < index)
+	if (cindex < index)
 		return (NULL);
 	/* in range */
 	return (head);
