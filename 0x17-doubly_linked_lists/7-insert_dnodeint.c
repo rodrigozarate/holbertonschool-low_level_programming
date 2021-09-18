@@ -31,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		if (count == idx - 1)
 			break;
 		else if (count < idx - 1 && firstnode == NULL)
-			return (NULL)
+			return (NULL);
 		firstnode = firstnode->next;
 		count++;
 	}
@@ -44,7 +44,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	if (lenght == idx)
 		return (add_dnodeint_end(h, n));
 	else if (lenght < idx)
-		return (NULL)
+		return (NULL);
 
 	/* get here connect */
 	firstnode->next->prev = newnode;
@@ -61,7 +61,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 * Return: int
 */
 
-node_len(dlistint_t **node)
+unsigned int node_len(dlistint_t **node)
 {
 	unsigned int length = 0;
 	dlistint_t *firstnode;
