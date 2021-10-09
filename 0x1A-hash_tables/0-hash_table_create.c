@@ -4,6 +4,8 @@
 * Date: October 8, 2021
 */
 
+#include "hash_tables.h"
+
 /**
 * hash_table_create - create Hash table
 * @size: unsigned long int
