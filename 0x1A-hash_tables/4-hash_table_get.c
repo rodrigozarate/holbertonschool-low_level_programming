@@ -27,7 +27,7 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 	/* walk list */
 	while (newnode)
 	{
-		if (strcomp(newnode->key, key) == 0)
+		if (strcmp(newnode->key, key) == 0)
 		{
 			return (newnode->value);
 		}
