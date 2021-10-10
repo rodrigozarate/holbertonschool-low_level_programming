@@ -11,6 +11,7 @@
 * @ht: structure
 * @key: char pointer
 * @value: char value
+* Return: 1 if ok 0 if error
 */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
@@ -40,7 +41,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		tempnode = tempnode->next;
 	}
-	newnode =malloc(sizeof(hash_node_t));
+	newnode = malloc(sizeof(hash_node_t));
 	if (newnode == NULL)
 		return (0);
 
