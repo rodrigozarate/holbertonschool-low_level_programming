@@ -15,8 +15,44 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
+	unsigned long int index, size;
+	hash_node_t *newnode, *tempnode;
 	/* key cannot be empty */
-	/* if collition first node */
-	/* value strdup */
-return (0);
+	if (!key || !value || !ht)
+	{
+		return (0);
+	}
+	size = ht->size;
+	index = key_index((const unsigned char *)key, size);
+	tempnode = ht->array[index];
+	while (tempnode)
+	{
+		/* if collition first node */
+		if (tempnode && strcmp(key, tempnode->key) == 0)
+		{
+			free(tempnode->value);
+			/* value strdup */
+			tempnode->value = strdup(value);
+			if (tempnode->value == NULL)
+				return (0);
+
+			return (1);
+		}
+		tempnode = tempnode->next;
+	}
+	newnode =malloc(sizeof(hash_node_t));
+	if (newnode == NULL)
+		return (0);
+
+	newnode->key = strdup(key);
+	if (nwenode->key == NULL)
+		return (0);
+
+	newnode->value = strdup(value);
+	if (newnode->value == NULL)
+		return (0);
+
+	newnode->next = ht->array[index];
+	ht->array[index] = newnode;
+return (1);
 }
