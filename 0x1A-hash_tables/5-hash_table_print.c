@@ -6,6 +6,12 @@
 
 #include "hash_tables.h"
 
+/**
+* hash_table_print - print nodes of ht
+* @ht: structure
+* Return: void
+*/
+
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
@@ -15,12 +21,9 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		return;
 	}
-	for (i = 0; i <= ht->size; i++)
+	printf("{");
+	for (i = 0; i < ht->size; i++)
 	{
-		if (flag == 0)
-		{
-			printf("{");
-		}
 		if (ht->array[i])
 		{
 			while (ht->array[i])
